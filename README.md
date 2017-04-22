@@ -1,8 +1,8 @@
-# Tito Ticket Importer
+# Tito Ticket Importer for MYSQL
 
 Tito is an excellent event ticketing platform and is available at http://ti.to
 
-We need to perform analysis on this data so we wrong this simple script to import the data into our platform for modelling.
+We need to perform analysis on this data so we wrote this simple script to import the data into our platform for modeling.
 
 ### Get the data from tito
 
@@ -47,15 +47,11 @@ CREATE TABLE tito_ticket (
 
 ```
 
-### Requirements
-
-You need to have nodejs and npm installed for this to run
-
 ### Environment variables required
 
-You need to set the following env variables to run this, the event_id is  column we us to internally map it to one of our events.
+You need to set the following env variables to run this, the event_id is  column we us to internally map it to one of our events. These variables should be setup inside the ``` run.sh ``` file
 
-```
+```bash
 export MYSQL_HOST=localhost
 export MYSQL_USERNAME=root
 export MYSQL_PASSWORD=
