@@ -1,0 +1,9 @@
+{
+	"name": "tito_importer",
+	"description": "Import tool to store tito ticket info in database",
+	"version": "1.0.0",
+	"dependencies" : {
+		"mysql" : "2.13.0",
+		"csvtojson": "1.1.4"
+  	}
+}
